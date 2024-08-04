@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding-top: 170px;
+    padding-top: 200px;
     height: 100vh;
     flex-direction: column;
     
@@ -72,7 +72,7 @@
 @media screen and (max-width: 768px) {
   .section-title {
     text-align: center;
-    margin: 100px 0 120px;
+    margin: 150px 0 120px;
     font-size: 40px;
     font-weight: bold;
   }
