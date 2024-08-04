@@ -1,6 +1,6 @@
 /* Navigation Section */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-links {
       display: none;
       position:absolute; /* add this */
@@ -27,7 +27,7 @@
 
 /* First Section */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     padding-top: 170px;
     height: 100vh;
@@ -69,7 +69,7 @@
 
 /* Skills Section */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .section-title {
     text-align: center;
     margin: 100px 0 120px;
@@ -84,7 +84,7 @@
 
 /* Project Section */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .project-grid {
     grid-template-columns: repeat(1, 1fr);
