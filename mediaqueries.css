@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 120px;
+    padding-top: 170px;
     height: 100vh;
     flex-direction: column;
     
@@ -52,11 +52,31 @@
       color:#ff2770;
       display: block; /* Make sure the text is displayed as a block element */
     }
+
+    .image-container{
+      margin-top: 100px;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 5px solid #ff2770;
+      box-shadow: 0 0 35px #ff2770;
+      pointer-events: none;
+    }
 }
 
 /* Skills Section */
 
 @media (max-width: 768px) {
+  .section-title {
+    text-align: center;
+    margin: 100px 0 120px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
