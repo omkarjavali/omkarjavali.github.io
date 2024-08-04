@@ -1,0 +1,72 @@
+/* Navigation Section */
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      position:absolute; /* add this */
+      top: 100%; /* add this */
+      right: 0px; /* add this */
+      background-color: black; /* add this, adjust color as needed */
+      padding: 10px;
+       /* add this, adjust padding as needed */
+  }
+
+  .nav-toggle {
+      display: block; /* add this */
+  }
+
+  .nav-links.show {
+      display: block;
+  }
+  
+  .nav-links li{
+      margin-bottom: 10px;
+      align-items: center;
+  }
+}
+
+/* First Section */
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 120px;
+    height: 100vh;
+    flex-direction: column;
+    
+  }
+  .content {
+    flex-basis:auto;
+    margin-bottom: 20px;
+    text-align: center; /* Add this to center the text */
+    padding-left: 50px;
+  }
+  
+  .content h1{
+    font-size: 24px;
+    color: white;
+  }
+
+  .content h1.name {
+      font-size: 24px; /* Adjust the font size as needed */
+      margin-bottom: 10px;
+      color:#ff2770;
+      display: block; /* Make sure the text is displayed as a block element */
+    }
+}
+
+/* Skills Section */
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Project Section */
+
+@media (max-width: 768px) {
+
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
