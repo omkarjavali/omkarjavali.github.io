@@ -1,6 +1,11 @@
 /* Navigation Section */
 
 @media screen and (max-width: 768px) {
+
+  .nav-bar{
+    padding: 1rem 8%;
+  }
+  
   .nav-links {
       display: none;
       position:absolute; /* add this */
@@ -29,7 +34,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding-top: 200px;
+    padding-top: 120px;
     height: 100vh;
     flex-direction: column;
     
@@ -54,7 +59,7 @@
     }
 
     .image-container{
-      margin-top: 100px;
+      margin-top: 30px;
     }
 
     .image-container img {
@@ -88,5 +93,6 @@
 
   .project-grid {
     grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
   }
 }
