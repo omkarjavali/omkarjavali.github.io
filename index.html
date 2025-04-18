@@ -1,222 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-      <title>Portfolio Website</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="mediaqueries.css">
-      <link rel="stylesheet" href="swiper-bundle.min.css">
-  </head>
-
-  <body>
-    <!-- Navigation Bar -->
-     
-    <nav class="nav-bar">
-        <div class="nav-logo">My Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-        <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio | M.Tech Student</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- End of Navigation Bar -->
-
-    <!-- Start of First Section -->
-
-    <div class="container">
-      <div class="content">
-        <h1>Hola, I'm</h1>
-        <h1 class="name">Omkar Mahantesh Javali</h1>
-        <h2>I'm a <span class="auto-type"></span></h2>
-        <p>Experienced in Python Programming and SQL.<br>I am a Computer Science graduate dedicated to transforming raw data into meaningful insights through effective data analysis and visualization.</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/omkarjavali/"><i class="ri-linkedin-fill"></i></a>
-          <a href="https://github.com/omkarjavali"><i class="ri-github-fill"></i></a>
-          <a href="https://omkarjavali.medium.com/"><i class="ri-medium-fill"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-text">
+                        <h1 class="text-white">Hi, I'm <span class="highlight">Omkar M Javali</span></h1>
+                        <h2 class="mb-4">M.Tech in <span class="highlight">Artificial Intelligence</span></h2>
+                        <p class="mb-4">Exploring the frontiers of AI, machine learning, and deep learning to solve complex problems.</p>
+                        <div class="hero-btns">
+                            <a href="#contact" class="btn primary-btn me-3">Get In Touch</a>
+                            <a href="#projects" class="btn secondary-btn">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-picture">
+                        <img src="images/hero-img.png" alt="Profile Picture" class="profile-img">
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="assects/Resume.pdf"><button class="button">Download CV</button></a>
-      </div>
-
-      <div class="image-container">
-        <img src="profile pic.png" alt="Profile Picture">
-      </div>
-    </div>
-
-    <!-- End of First Section -->
-
-    <!-- Start of Skills Section -->
-
-    <h2 class="section-title" id = "skills">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python Logo">
-        <p>Python</p>
-        <span class="stars">
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-        </span>
-      </div>
-
-      <div class="skill-card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="Git Logo">
-        <p>MySQL</p>
-        <span class="stars">
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-        </span>
-      </div>
-
-      <div class="skill-card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Power_BI_logo.svg" alt="Git Logo">
-        <p>Power BI</p>
-        <span class="stars">
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-        </span>
-      </div>
-
-      <div class="skill-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Git Logo">
-        <p>Excel</p>
-        <span class="stars">
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-        </span>
-      </div>
-
-      <div class="skill-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 Logo">
-        <p>HTML5</p>
-        <span class="stars">
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-        </span>
-      </div>
-
-      <div class="skill-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3 Logo">
-        <p>CSS3</p>
-        <span class="stars">
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-line"></i>
-          <i class="ri-star-line"></i>
-        </span>
-      </div>
-    </div>
-      
-    <!-- End of Skills Section -->
-
-    <!-- Start of Project Section -->
-
-    <section class="project-section" id="projects">
-      <h2 class="project-section-title">Projects</h2>
-      <div class="project-grid">
-
-        <div class="project-card">
-          <img src="assects/Bechdel Test.jpeg" alt="Project 1 Image">
-          <h3>Bechdel Test Analysis</h3>
-          <p>Skills Used: Python, Seaborn, matplotlib</p>
-          <a href="https://github.com/omkarjavali/Bechdel-Test-Analysis" class="project-link">View Project</a>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
-
-        <div class="project-card">
-          <img src="assects/T20 World Cup Analysis 2022.png" alt="Project 1 Image">
-          <h3>T20 World Cup Analysis 2022 using Power BI</h3>
-          <p>Skills Used: Web Scriping, Data Cleaning, Data visualization</p>
-          <a href="https://github.com/omkarjavali/T20-World-Cup-Analysis-using-PowerBI" class="project-link">View Project</a>
-        </div>
-
-        <div class="project-card">
-          <img src="assects/Telecom Analysis.png" alt="Project 2 Image">
-          <h3>Telecom Before/After 5G Analysis using Power BI</h3>
-          <p>Skills Used: Power BI, Data Analysis, Dashboard Designing</p>
-          <a href="https://github.com/omkarjavali/Telecom-Analysis-using-PowerBI" class="project-link">View Project</a>
-        </div>
-
-        <div class="project-card">
-          <img src="assects/Automatic Traffic Rule Violation Detection and Fine Collection using ML.png" alt="Project 3 Image">
-          <h3>Automatic Traffic Rule Violation Detection and Fine Collection using ML</h3>
-          <p>Skills Used: Python, YOLOv5, OCR, ALPR API</p>
-          <a href="https://github.com/omkarjavali/Automatic-Traffic-Rule-Violation-Detection-and-Fine-Collection-Using-Machine-Learning" class="project-link">View Project</a>
-        </div>
-        
-        <div class="project-card">
-          <img src="assects/Road Accident Analysis.png" alt="Project 3 Image">
-          <h3>Road Accident Analysis using Excel</h3>
-          <p>Skills Used: Excel, Pivot Tables, Dashboard Designing</p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
-        
-        <div class="project-card">
-          <img src="assects/Scholarship Management System.png" alt="Project 3 Image">
-          <h3>Scholarship Management System</h3>
-          <p>Skills Used: HTML, CSS, PHP, MySQL</p>
-          <a href="https://github.com/omkarjavali/Scholarship-Management-System" class="project-link">View Project</a>
-        </div>
-      </div>
     </section>
 
-    <!-- End of Project Section -->
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="about-img">
+                        <div class="img-container">
+                            <div class="img-box">
+                                <img src="images/hero-img.png" alt="About Me" class="img-fluid">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="about-content">
+                        <h3>M.Tech Student in Artificial Intelligence</h3>
+                        <p>Hi, I'm Omkar Mahantesh Javali, an enthusiastic M.Tech student in Artificial Intelligence at REVA University with a strong foundation in Computer Science and hands-on experience in building real-world AI and data-driven solutions. I’m passionate about using technology to solve complex problems and drive innovation.</p>
+                        <p>With a background in Python, SQL, Power BI, and Machine Learning, I’ve developed projects ranging from traffic rule violation detection using computer vision to an AI-powered SQL query tool using natural language. I enjoy blending data science with practical applications and have published research in machine learning as well.</p>
+                        <p>I’m always eager to learn, explore new tools and technologies, and contribute to impactful projects. Let’s build something amazing together!</p>
+                        <div class="personal-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span><i class="fas fa-user"></i> Name:</span>
+                                        <p>Omkar Mahantesh Javali</p>
+                                    </div>
+                                    <div class="info-item">
+                                        <span><i class="fas fa-envelope"></i> Email:</span>
+                                        <p>omkarjavali11@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span><i class="fas fa-graduation-cap"></i> Degree:</span>
+                                        <p>M.Tech in AI</p>
+                                    </div>
+                                    <div class="info-item">
+                                        <span><i class="fas fa-map-marker-alt"></i> Location:</span>
+                                        <p>Bangalore, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <a href="https://github.com/omkarjavali" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/omkarjavali/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://omkarjavali.medium.com/" class="social-icon"><i class="fab fa-medium-m"></i></a>
+                        </div>
+                        
+                        <a href="https://drive.google.com/file/d/1s2qVAJ3g7Z31Urf3TW8XdlOuS-CN_PVc/view?usp=sharing" class="btn primary-btn mt-4">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Start of Contact Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="section gray-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="skills-content">
+                        <h3>Technical Expertise</h3>
+                        <p>I have developed a diverse set of skills throughout my academic journey and projects. My technical toolkit includes:</p>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4><i class="fas fa-brain"></i>Primary Skills</h4>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-percentage" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-percentage" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Power BI</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-percentage" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Machine Learning</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-percentage" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="skill-category">
+                        <h4><i class="fas fa-code"></i> Programming & Frameworks</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Gradio</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">face_recognition</span>
+                            <span class="skill-tag">YOLOv8</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category mt-4">
+                        <h4><i class="fas fa-database"></i> Data Science & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">MySQL Workbench</span>
+                            <span class="skill-tag">Jupyter Notebook</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Google Colab</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">PyCharm</span>
+                            <span class="skill-tag">MS Excel</span>
+                            <span class="skill-tag">GenAI Tools</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category mt-4">
+                        <h4><i class="fas fa-puzzle-piece"></i>Soft Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Leadership Qualities</span>
+                            <span class="skill-tag">Teamwork</span>
+                            <span class="skill-tag">Team Management</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Smart-work</span>
+                            <span class="skill-tag">Good Listener</span>
+                            <span class="skill-tag">Decision Making</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container2" id="contact">
-      <h1 class="contact">Contact Me</h1>
-      <div class="circle">
-          <img src="assects/contact me.jpeg" alt="Hacker Image">
-      </div>
-      <p class="contact">Below I have given my Contact Number and Email ID :-</p>
-      <p class="contact">Contact Number: <span>9606698925</span></p>
-      <p class="contact">Email ID: <span>omkarjavali11@gmail.com</span></p>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">AI/ML</button>
+                <button class="filter-btn" data-filter="pb">Power BI/Excel</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="wd">Web Development</button>
+            </div>
+            
+            <div class="row project-container">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="ml" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder ml-bg">
+                                <img src="images\ATRVDFC.png" alt="Project 1">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Automatic Traffic Rule Violation Detection and Fine Collection using ML</h4>
+                            <p>Engineered a YOLOv5 + ALPR-based system to detect traffic violations and automate fine processing with over 91% accuracy.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>YOLOv5</span>
+                                <span>ALPR</span>
+                                <span>OpenCV</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omkarjavali/Automatic-Traffic-Rule-Violation-Detection-and-Fine-Collection-Using-Machine-Learning" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="ml" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder ml-bg">
+                                <img src="images\CDD.png" alt="Project 2">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Container Damage Detection Web App</h4>
+                            <p>Developed a YOLOv8-based web app that detects container damages in real-time from uploaded images or videos.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>YOLOv8</span>
+                                <span>Streamlit</span>
+                                <span>OpenCV</span>
+                                <span>Git</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://container-damage-detection.streamlit.app/" class="project-link"><i class="fas fa-link"></i> Demo</a>
+                                <a href="https://github.com/omkarjavali/container_damage_detection" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="ml" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder ml-bg">
+                                <img src="images\CWD.png" alt="Project 3">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Chat with Database</h4>
+                            <p>Built an AI-powered tool that translates natural language into SQL queries, enabling easy database access via a user-friendly Streamlit interface.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Mistral AI API</span>
+                                <span>Streamlit</span>
+                                <span>plotly</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://chatwithdatabase-1.streamlit.app/" class="project-link"><i class="fas fa-link"></i> Demo</a>
+                                <a href="https://github.com/omkarjavali/Chat_with_Database" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="pb" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder pb-bg">
+                                <img src="images\T20 World Cup Analysis 2022.png" alt="Project 4">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>T20 World Cup 2022 Analysis using Power BI</h4>
+                            <p>Scraped and visualized player stats to uncover key performance trends and build an optimal fantasy team.</p>
+                            <div class="project-tags">
+                                <span>Web Scripting</span>
+                                <span>Python</span>
+                                <span>Power BI</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://app.powerbi.com/links/hkL-BTjgDc?ctid=474565c1-bca4-4295-a2f5-b0c7dbf2591c&pbi_source=linkShare" class="project-link"><i class="fas fa-link"></i>Dashboard</a>
+                                <a href="https://github.com/omkarjavali/T20-World-Cup-Analysis-using-PowerBI" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="pb" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder pb-bg">
+                                <img src="images\TA.png" alt="Project 5">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Telecom Analysis using Power BI</h4>
+                            <p>Led a Power BI project analyzing 5G rollout impact through dynamic dashboards and actionable insights.</p>
+                            <div class="project-tags">
+                                <span>Power BI</span>
+                                <span>Data Analysis</span>
+                                <span>DAX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://app.powerbi.com/links/3DC-F4LToq?ctid=474565c1-bca4-4295-a2f5-b0c7dbf2591c&pbi_source=linkShare" class="project-link"><i class="fas fa-link"></i>Dashboard</a>
+                                <a href="https://github.com/omkarjavali/Telecom-Analysis-using-PowerBI" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="ml" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder cv-bg">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Facial Recognition Attendance System</h4>
+                            <p>An automated system that uses facial recognition to track attendance in classrooms or workplaces.</p>
+                            <div class="project-tags">
+                                <span>Computer Vision</span>
+                                <span>Face Recognition</span>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i> Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- End of Contact Section -->
+                <!-- Project 7 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="pb" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder pb-bg">
+                                <img src="images/Road Accident Analysis.png" alt="Project 7">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Road Accident Analysis using Excel</h4>
+                            <p>Developed an interactive dashboard to visualize and analyze road accident trends by vehicle type, road conditions, and location, enabling data-driven safety interventions.</p>
+                            <div class="project-tags">
+                                <span>Excel</span>
+                                <span>Pivot Table</span>
+                                <span>Dashboard Designing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omkarjavali/Road-Accident-Analysis-using-Excel" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Start of Footer Section -->
+                <!-- Project 8 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="data" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder cv-bg">
+                                <img src="images/Bechdel Test.jpeg" alt="Project 8">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Bechdel Test Analysis</h4>
+                            <p>Analyzed gender representation in thousands of films using the Bechdel Test, uncovering trends and biases in cinematic storytelling from the 1950s to today.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Matplotlib</span>
+                                <span>Seaborn</span>
+                                <span>Pandas</span>
+                                <span>Data Analysis</span>
+                                <span>Jupyter Notebook</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omkarjavali/Bechdel-Test-Analysis" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project 9 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="wd" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <div class="project-placeholder wd-bg">
+                                <img src="images/Scholarship Management System.png" alt="Project 9">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Scholarship Management System</h4>
+                            <p>The Scholarship Management Project was developed to create a website for efficient monitoring and controlling of scholarship transactions using HTML, CSS, and PHP. It focuses on basic scholarship operations.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>XMAPP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/omkarjavali/Scholarship-Management-System" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section gray-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Certifications</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Python 101 for Data Science</h4>
+                            <p class="cert-issuer">IBM</p>
+                            <p class="cert-date">2025</p>
+                            <a href="https://drive.google.com/file/d/1srZjEFecSczLv45Ug0CWetEvWqNjBmqM/view" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Databases and SQL for Data Science with Python </h4>
+                            <p class="cert-issuer">IBM</p>
+                            <p class="cert-date">2024</p>
+                            <a href="https://drive.google.com/file/d/1myqK7Oic6Iwn4662c31zlRuYvUab-Xh4/view" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Data Analysis with Python</h4>
+                            <p class="cert-issuer">IBM</p>
+                            <p class="cert-date">2024</p>
+                            <a href="https://drive.google.com/file/d/1yO6kMRZ2kTYn861RfUy-sloBMyNFUx8z/view" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Excel Basics for Data Analysis</h4>
+                            <p class="cert-issuer">IBM</p>
+                            <p class="cert-date">2024</p>
+                            <a href="https://drive.google.com/file/d/111M7guCpF7mtTd-y_3l-Bb97OI48wcOu/view?usp=sharing" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Python Libraries for Data Science</h4>
+                            <p class="cert-issuer">Simplilearn</p>
+                            <p class="cert-date">2024</p>
+                            <a href="https://drive.google.com/file/d/12Gum1zKh5B7m_oLTV8nbxeUyl8Kq14CL/view?usp=sharing" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Machine Learning</h4>
+                            <p class="cert-issuer">Internshala Training</p>
+                            <p class="cert-date">2020</p>
+                            <a href="https://drive.google.com/file/d/163R4owAv5P8arXN5FSLI5JAYW6VS_39J/view" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Publication</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="publications-container">
+                <!-- Publication 1 -->
+                <div class="publication-item" data-aos="fade-up">
+                    <div class="publication-year">
+                        <span>2023</span>
+                    </div>
+                    <div class="publication-content">
+                        <h4>Survey on Traffic Rule Violation Detection and Fine Collection using Machine Learning</h4>
+                        <p class="publication-authors">Varsha Desai, Snehal Kadolkar, Sapana Yakkundi</p>
+                        <p class="publication-journal">Journal of Research in Computer Science and Engineering, Volume 8 Issue 1, ISSN-No: 2457-0818</p>
+                        <p class="publication-abstract">Research paper on automated traffic rule violation detection using Machine Learning, focusing on helmet compliance via CCTV footage.</p>
+                        <div class="publication-links">
+                            <a href="https://drive.google.com/file/d/1M0uoWE8B0eQFZmCmFcfVXJz7hGZ8BdTK/view" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="https://drive.google.com/file/d/1_qwwGpwGyzz-BfXm_MbMkMTYS7qwf0Xk/view" class="pub-link"><i class="fa-solid fa-certificate"></i></i>Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section gray-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Feel free to reach out to me for collaborations, research opportunities, or just to say hello!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>omkarjavali11@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 9606698925</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Bangalore, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/omkarjavali" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/omkarjavali/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://omkarjavali.medium.com/" class="social-icon"><i class="fab fa-medium-m"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn primary-btn w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-content">
-          <div class="social-links">
-              <a href="https://github.com/omkarjavali" class="social-link"><i class="ri-github-fill"></i></a>
-              <a href="https://www.linkedin.com/in/omkarjavali/" class="social-link"><i class="ri-linkedin-fill"></i></a>
-              <a href="https://omkarjavali.medium.com/" class="social-link"><i class="ri-medium-fill"></i></a>
-          </div>
-      </div>
-      <div class="copyright">
-          &copy; Omkar Javali | All Copyrights Reserved
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-content">
+                        <h3>Omkar Mahantesh Javali</h3>
+                        <p>M.Tech in Artificial Intelligence</p>
+                        <div class="footer-social">
+                            <a href="https://github.com/omkarjavali" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/omkarjavali/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://omkarjavali.medium.com/" class="social-icon"><i class="fab fa-medium-m"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <p>&copy; 2025 Omkar Mahantesh Javali. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- End of Footer Section -->
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+</body>
 </html>
